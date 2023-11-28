@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+body{
+    background-image: url(https://i.pinimg.com/originals/ee/65/a0/ee65a020443c4dd7bf31435390a42c96.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    overflow: hidden;
+}
+
+img{
+    width: 130px;
+    position: absolute;
+    bottom: 5px;
+    margin-bottom: 8.5em;
+    animation-name: pose;
+    animation-duration: 5s;
+animation-timing-function: ease;
+animation-delay: .5s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-fill-mode: both;
+animation-play-state: running;
+
+animation: pose 1.5s ease;
+}
+
+img:hover{
+    animation-play-state: running;
+}
+
+@keyframes pose {
+from{
+transform: translate(0);
+}
+
+to{
+transform: translate(calc(100vw - 180px));
+}
+
+}
